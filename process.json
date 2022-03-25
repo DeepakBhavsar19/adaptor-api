@@ -1,0 +1,8 @@
+{
+  "name": "api.secretAdaptor-3059",
+  "script": "bin/www",
+  "env": {
+    "WHITELIST_URL": "['http://localhost:4250' ]",
+    "PORT": "3059"
+  }
+}

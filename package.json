@@ -1,0 +1,66 @@
+{
+  "name": "newdemo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "pm:start": "pm2 start process.json",
+    "dev:start": "nodemon ./bin/www",
+    "lint": "eslint .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:ci": "jest --ci --reporters=default --reporters=jest-junit",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --write \"./**/*.{ts,js}\"",
+    "prepare": "husky install"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "all": "^0.0.0",
+    "bcrypt": "5.0.1",
+    "canvas": "^2.8.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "~1.4.4",
+    "cors": "2.8.5",
+    "csurf": "1.11.0",
+    "debug": "~2.6.9",
+    "dotenv": "10.0.0",
+    "ejs": "^2.6.2",
+    "express": "~4.16.1",
+    "express-jwt": "^6.1.0",
+    "express-rate-limit": "^5.0.0",
+    "fs": "0.0.1-security",
+    "helmet": "4.6.0",
+    "hooks": "^0.3.2",
+    "http-errors": "1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "limiter": "^2.1.0",
+    "morgan": "~1.9.1",
+    "shelljs": "0.8.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "7.0.0",
+    "jest": "^27.0.1",
+    "jest-junit": "^12.0.0",
+    "prettier": "2.3.1"
+  },
+  "prettier": {
+    "endOfLine": "auto",
+    "printWidth": 140,
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
+  }
+}
